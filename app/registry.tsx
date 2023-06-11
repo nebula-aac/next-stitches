@@ -28,7 +28,7 @@ export default function StyledJsxRegistry({
 }
 */
 
-export default function ServerStylesheet({ children }: { children: JSX.Element }): JSX.Element {
+export default function ServerStylesheet({ children }: { children: React.ReactNode }): React.ReactNode {
     useServerInsertedHTML(() => {
         if (typeof window === 'undefined') {
             return (
